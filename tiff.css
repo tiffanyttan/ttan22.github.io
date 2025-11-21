@@ -26,6 +26,7 @@ header {
     background: white;
 }
 
+
 h2 {
     margin-top: 1px;
     margin-bottom: 2px;
@@ -76,6 +77,13 @@ aside {
     opacity: 0.7;
 }
 
+.projects h1 {
+    margin-top:0;
+    margin-bottom: 1em;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
 .projects {
     padding: 3em 4em;
 }
@@ -103,6 +111,7 @@ aside {
     border-radius: 8px;
     margin-bottom: 1.5em;
 }
+
 
 .contentone {
     background-image: url("updatedangietea copy.png");
@@ -139,7 +148,7 @@ aside {
     background: #fafafa;
 }
 
-.contact-from input:focus, .contact-form textarea:focus {
+.contact-form input:focus, .contact-form textarea:focus {
     outline: none;
     border-color: #111;
 }
@@ -157,6 +166,58 @@ aside {
 
 .contact-form button:hover {
     background: #444;
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    min-height: 80vh;
+}
+
+.about-sidebar {
+    border-right: 1px solid #e5e5e5;
+    padding: 2em 1.5em;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-image {
+    width: 100%;
+   height: 260px;
+   background: #eaeaea;
+   border: 1px solid #dcdcdc;
+}
+
+.about-title {
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.box, .bio-box {
+    border: 1px solid #e5e5e5;
+    background: white;
+    padding: 2em;
+    border-radius: 4px;
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 2em;
+}
+
+.awards {
+    grid-column: 2/3;
+}
+
+.skills {
+    margin-top: 1em;
 }
 
 footer {
